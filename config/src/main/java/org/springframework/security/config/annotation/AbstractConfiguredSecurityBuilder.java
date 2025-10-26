@@ -120,7 +120,6 @@ public abstract class AbstractConfiguredSecurityBuilder<O, B extends SecurityBui
 	 * are not considered.
 	 * @param configurer
 	 * @return the {@link SecurityConfigurerAdapter} for further customizations
-	 * @throws Exception
 	 */
 	public <C extends SecurityConfigurer<O, B>> C apply(C configurer) {
 		add(configurer);
@@ -142,7 +141,6 @@ public abstract class AbstractConfiguredSecurityBuilder<O, B extends SecurityBui
 	 * </code>
 	 * @param configurer
 	 * @return the {@link SecurityBuilder} for further customizations
-	 * @throws Exception
 	 * @since 7.0
 	 */
 	public <C extends SecurityConfigurerAdapter<O, B>> B with(C configurer) {
@@ -154,7 +152,6 @@ public abstract class AbstractConfiguredSecurityBuilder<O, B extends SecurityBui
 	 * invokes {@link SecurityConfigurerAdapter#setBuilder(SecurityBuilder)}.
 	 * @param configurer
 	 * @return the {@link SecurityBuilder} for further customizations
-	 * @throws Exception
 	 * @since 6.2
 	 */
 	@SuppressWarnings("unchecked")

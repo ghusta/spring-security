@@ -36,7 +36,6 @@ public interface SecurityConfigurer<O, B extends SecurityBuilder<O>> {
 	 * the object. This ensures that the {@link #configure(SecurityBuilder)} method uses
 	 * the correct shared objects when building. Configurers should be applied here.
 	 * @param builder
-	 * @throws Exception
 	 */
 	void init(B builder);
 
@@ -44,7 +43,6 @@ public interface SecurityConfigurer<O, B extends SecurityBuilder<O>> {
 	 * Configure the {@link SecurityBuilder} by setting the necessary properties on the
 	 * {@link SecurityBuilder}.
 	 * @param builder
-	 * @throws Exception
 	 */
 	void configure(B builder);
 

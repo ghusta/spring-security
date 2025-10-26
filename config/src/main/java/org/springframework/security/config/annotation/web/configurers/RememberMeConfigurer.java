@@ -344,7 +344,6 @@ public final class RememberMeConfigurer<H extends HttpSecurityBuilder<H>>
 	 * @param http the {@link HttpSecurity} to lookup shared objects
 	 * @param key the {@link #key(String)}
 	 * @return the {@link RememberMeServices} to use
-	 * @throws Exception
 	 */
 	private RememberMeServices getRememberMeServices(H http, String key) {
 		if (this.rememberMeServices != null) {
